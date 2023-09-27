@@ -29,10 +29,10 @@ app.MapCrate();
 app.Run();
 ```
 
-5. Create a new Module
+5. Create a new Feature
 
 ```csharp
-    public class ProductCrate : IRouterCrate, IServiceCrate
+    public class Product : IRouterCrate, IServiceCrate
     {
 
         public void AddEndpoint(IEndpointRouteBuilder app)
