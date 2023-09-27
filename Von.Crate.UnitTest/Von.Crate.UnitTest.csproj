@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="7.0.11" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.7.2" />
+    <PackageReference Include="NUnit" Version="3.13.3" />
+    <PackageReference Include="NUnit.ConsoleRunner" Version="3.16.3" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
+	<FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TestWebHost\TestWebHost.csproj" />
+    <ProjectReference Include="..\Von.Crate.Core\Von.Crate.Core.csproj">
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Von.Crate.UnitTestMock.ProductApi\Von.Crate.UnitTestMock.ProductApi.csproj">
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+
+</Project>
