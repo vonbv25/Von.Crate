@@ -51,4 +51,18 @@ app.Run();
             //
         }
     }
+
+    public static class ProductEndpoint
+    {
+
+        public static string GetProductName()
+        {
+            return "Crocodile Wallet";
+        }
+
+        public static IResult AddProduct(string product)
+        {
+            return Results.Accepted(product);
+        }
+    }
 ```
