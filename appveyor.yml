@@ -6,7 +6,7 @@ build_script:
   - ps: .\build.ps1
 test: on
 artifacts:
-  - path: .\BuildArtifacts\*.nupkg
+  - path: .src\BuildArtifacts\*.nupkg
     name: NuGet
 skip_commits:
   message: /^\[nobuild\](.*)?/ # Skip build if commit message starts with [nobuild]

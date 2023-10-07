@@ -10,6 +10,7 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageTags>Framework VerticalSlice</PackageTags>
     <PackageReleaseNotes>This is the initial release</PackageReleaseNotes>
+    <PackageOutputPath>..\BuildArtifacts\</PackageOutputPath>
   </PropertyGroup>
 
 	<ItemGroup>
