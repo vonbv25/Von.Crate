@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/8mj84op3ym6342l7/branch/master?svg=true)](https://ci.appveyor.com/project/vonbv25/von-crate/branch/master)
+
 # Crate
 This is a simple framework designed to streamline the development of applications using Vertical Slice Architecture in .NET Core. 
 
