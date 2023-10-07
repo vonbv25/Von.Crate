@@ -24,7 +24,7 @@ deploy:
   on:
     branch: master
 - provider: NuGet
-    server: https://nuget.pkg.github.com/vonbv25@gmail.com/index.json
+    server: https://nuget.pkg.github.com/vonbv25/index.json
     api_key:
       secure: whXHuF90Fu558DpfESkMf/QtMCuJxkX8JXryU+ted+TGl0MCJw4vs+vJC+dK4jrI  # You can encrypt your API key using AppVeyor's encryption
     on:
