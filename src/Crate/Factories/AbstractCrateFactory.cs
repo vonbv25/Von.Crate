@@ -7,9 +7,9 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Von.Crate.Core
+namespace Crate.Factories
 {
-    public abstract class AbstractCrateFactory 
+    public abstract class AbstractCrateFactory
     {
         protected List<IRouterCrate> routerCrates = new List<IRouterCrate>();
         protected List<IServiceCrate> serviceCrates = new List<IServiceCrate>();
@@ -27,8 +27,8 @@ namespace Von.Crate.Core
                 var loadedAssembly = Assembly.LoadFrom(dllFile);
 
                 if (loadedAssembly == null) throw new CrateException($"Unable to load this assembly file{dllFile}");
-                
-                var crateTypes = loadedAssembly.GetTypes().Where(type => ((typeof(IRouterCrate).IsAssignableFrom(type) && !type.IsInterface) || ((typeof(IServiceCrate).IsAssignableFrom(type) && !type.IsInterface))));
+
+                var crateTypes = loadedAssembly.GetTypes().Where(type => typeof(IRouterCrate).IsAssignableFrom(type) && !type.IsInterface || typeof(IServiceCrate).IsAssignableFrom(type) && !type.IsInterface);
 
                 foreach (var crateType in crateTypes)
                 {

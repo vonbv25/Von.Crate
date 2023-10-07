@@ -1,19 +1,19 @@
 ﻿using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Von.Crate.Core
+namespace Crate.Factories
 {
     public class CrateFactory : AbstractCrateFactory, ICrateFactory
     {
         public void UnpackService(IServiceCollection services)
         {
-            serviceCrates.ForEach((crate) => 
+            serviceCrates.ForEach((crate) =>
             {
                 try
                 {
                     crate.AddService(services);
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     throw new CrateException($"Error encountered in adding a service for {crate.GetType().FullName}", ex);
                 }

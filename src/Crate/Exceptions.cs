@@ -5,7 +5,7 @@ using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Von.Crate.Core
+namespace Crate
 {
     public class CrateException : Exception
     {
