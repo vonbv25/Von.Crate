@@ -11,10 +11,15 @@ artifacts:
 skip_commits:
   message: /^\[nobuild\](.*)?/ # Skip build if commit message starts with [nobuild]
 deploy:
-  provider: NuGet
-  server:                  # remove to push to NuGet.org
-  api_key:
-    secure: DdCc4QnTvtI6GR7/nTsilzxdjScMYHDlMi6GHk/Ycnw=
-  skip_symbols: false
-  symbol_server:           # remove to push symbols to SymbolSource.org
-  artifact: /.*(\.|\.s)nupkg/
+- provider: GitHub
+  tag: .NetCore Framework
+  release: Crate
+  description: Framework for Vertical Slice architecture
+  auth_token:
+    secure: whXHuF90Fu558DpfESkMf/QtMCuJxkX8JXryU+ted+TGl0MCJw4vs+vJC+dK4jrI
+  repository: vonbv25/Von.Crate
+  draft: true
+  prerelease: true
+  force_update: true
+  on:
+    branch: master
