@@ -1,9 +1,8 @@
-﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Mvc.Testing;
-using Microsoft.AspNetCore.Routing;
+﻿using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.Extensions.Hosting;
 using NUnit.Framework;
-using Von.Crate.Core;
+using Crate;
+using TestWebHost;
 
 namespace Von.Crate.UnitTest
 {

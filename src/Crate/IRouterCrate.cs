@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Von.Crate.Core
+namespace Crate
 {
     public interface IRouterCrate
     {

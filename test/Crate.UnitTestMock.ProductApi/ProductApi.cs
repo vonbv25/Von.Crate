@@ -1,9 +1,9 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using Crate;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
-using Von.Crate.Core;
-
+using Von.Crate;
 namespace Von.Crate.UnitTestMock.ProductApi
 {
     public class ProductCrate : IRouterCrate, IServiceCrate

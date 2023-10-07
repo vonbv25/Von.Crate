@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Von.Crate.Core
+namespace Crate
 {
     public interface ICrateFactory
     {
