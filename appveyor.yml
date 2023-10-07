@@ -12,7 +12,7 @@ skip_commits:
   message: /^\[nobuild\](.*)?/ # Skip build if commit message starts with [nobuild]
 deploy:
 - provider: GitHub
-  tag: .NetCore Framework
+  tag: c#
   release: Crate
   description: Framework for Vertical Slice architecture
   auth_token:
