@@ -13,7 +13,7 @@ skip_commits:
 deploy:
 - provider: GitHub
   tag: c#
-  release: Crate
+  release: v1.0.0
   description: Framework for Vertical Slice architecture
   auth_token:
     secure: whXHuF90Fu558DpfESkMf/QtMCuJxkX8JXryU+ted+TGl0MCJw4vs+vJC+dK4jrI
@@ -21,5 +21,11 @@ deploy:
   draft: true
   prerelease: true
   force_update: true
+  on:
+    branch: master
+- provider: NuGet
+  server: https://npm.pkg.github.com
+  api_key:
+    secure: whXHuF90Fu558DpfESkMf/QtMCuJxkX8JXryU+ted+TGl0MCJw4vs+vJC+dK4jrI
   on:
     branch: master
