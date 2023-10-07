@@ -2,8 +2,6 @@ version: "{build}"
 pull_requests:
   do_not_increment_build_number: true
 image: Visual Studio 2022
-nuget:
-  disable_publish_on_pr: true
 build_script:
   - ps: .\build.ps1
 test: on
@@ -12,3 +10,11 @@ artifacts:
     name: NuGet
 skip_commits:
   message: /^\[nobuild\](.*)?/ # Skip build if commit message starts with [nobuild]
+deploy:
+  provider: NuGet
+  server:                  # remove to push to NuGet.org
+  api_key:
+    secure: DdCc4QnTvtI6GR7/nTsilzxdjScMYHDlMi6GHk/Ycnw=
+  skip_symbols: false
+  symbol_server:           # remove to push symbols to SymbolSource.org
+  artifact: /.*(\.|\.s)nupkg/
