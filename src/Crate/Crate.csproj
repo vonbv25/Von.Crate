@@ -11,6 +11,10 @@
     <PackageTags>Framework VerticalSlice</PackageTags>
     <PackageReleaseNotes>This is the initial release</PackageReleaseNotes>
     <PackageOutputPath>..\BuildArtifacts\</PackageOutputPath>
+    <Authors>vonbv25</Authors>
+    <Company>vonbv25</Company>
+    <Description>Simple framework designed to streamline the development of applications using Vertical Slice Architecture in .Net Core</Description>
+    <RepositoryUrl>https://github.com/vonbv25/Von.Crate</RepositoryUrl>
   </PropertyGroup>
 
 	<ItemGroup>
