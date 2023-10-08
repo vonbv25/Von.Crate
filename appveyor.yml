@@ -24,6 +24,9 @@ deploy:
   on:
     branch: master
 - provider: NuGet
-  server: https://api.nuget.org/v3/index.json
+  api_key:
+    secure: pqRu6kZD/ChonXCIpb9otgK4S2MptikoIz2f9WaXPndG1KqoPFY59qkltmvi6Pw8
+  username:
+    secure: +b7tnsMwqyekNtyAEaJ2UA==
   on:
     branch: master
