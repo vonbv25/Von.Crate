@@ -24,7 +24,7 @@ deploy:
   on:
     branch: master
 - provider: NuGet
-  server: https://npm.pkg.github.com
+  server: https://nuget.pkg.github.com/vonbv25/index.json
   api_key:
     secure: whXHuF90Fu558DpfESkMf/QtMCuJxkX8JXryU+ted+TGl0MCJw4vs+vJC+dK4jrI
   on:
