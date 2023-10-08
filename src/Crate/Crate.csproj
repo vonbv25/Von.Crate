@@ -15,6 +15,7 @@
     <Company>vonbv25</Company>
     <Description>Simple framework designed to streamline the development of applications using Vertical Slice Architecture in .Net Core</Description>
     <RepositoryUrl>https://github.com/vonbv25/Von.Crate</RepositoryUrl>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
 	<ItemGroup>
