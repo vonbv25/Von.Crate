@@ -19,7 +19,10 @@ master
 
 1. Create new EMPTY ASP.NetCore application - `dotnet new web -n MyApp`
 2. Change into the new project location - `cd ./MyApp`
-3. Add Crate package ( dotnet add package Crate --version 1.0.0 )
+3. Add Crate package 
+```
+dotnet add package Crate --version 1.0.0
+```
 4. Modify your Program.cs to use Crate
 
 ```csharp
